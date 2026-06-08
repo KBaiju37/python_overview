@@ -29,6 +29,10 @@ with open("poem.txt","r") as f:
     content = f.read()
     words = content.split()
     print("total words", len(words))
+
+
+with open("poem.txt","a") as f:
+    f.write("\n hello world")
     
 
 
