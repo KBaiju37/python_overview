@@ -15,3 +15,12 @@ g = even_numbers(4)
 print(next(g))
 print(next(g))
 
+def empid(n):
+    for i in range(n,1000):
+        if i >= 100:
+            print(f"empid is :{i}")
+            yield i
+
+a=empid(100)
+print(next(a))
+print(next(a))    
